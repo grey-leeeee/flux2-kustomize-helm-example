@@ -24,7 +24,7 @@ spec:
     #     name: aws-load-balancer-controller
     #     namespace: kube-system
     - patch: |
-        - op: add
+        - op: replace
           path: /spec/template/spec/containers/0/args/0
           value: --cluster-name=goorm-seoul-dev-mgmt
       target:
