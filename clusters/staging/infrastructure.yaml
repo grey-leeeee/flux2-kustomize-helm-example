@@ -15,8 +15,16 @@ spec:
   prune: true
   wait: true
 patches:
+  # - patch: |
+  #     - op: replace
+  #       path: /spec/values/clusterName
+  #       value: goorm-seoul-dev-mgmt
+  #   target:
+  #     kind: HelmRelease
+  #     name: aws-load-balancer-controller
+  #     namespace: kube-system
   - patch: |
-      - op: replace
+      - op: add
         path: /spec/template/spec/containers/0/args/0
         value: --cluster-name=goorm-seoul-dev-mgmt
     target:

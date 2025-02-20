@@ -25,4 +25,4 @@ spec:
       interval: 12h
   values:
     installCRDs: true
-    clusterName: my-cluster
+    # clusterName: my-cluster
