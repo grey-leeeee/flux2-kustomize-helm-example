@@ -17,7 +17,7 @@ spec:
   patches:
     - patch: |
         - op: replace
-          path: /spec/chart/values/clusterName
+          path: /spec/values/clusterName
           value: goorm-seoul-dev-mgmt
       target:
         kind: HelmRelease
